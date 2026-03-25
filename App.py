@@ -59,17 +59,6 @@ data = {
 df = pd.DataFrame(data)
 st.dataframe(df, use_container_width=True)
 
-# ─── Gráfico ────────────────────────────────────────────────────────
-st.subheader("📈 Ejemplo de gráfico")
-
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
-
-fig, ax = plt.subplots()
-ax.plot(x, y)
-ax.set_title("Función seno")
-
-st.pyplot(fig)
 
 # ─── Información adicional ──────────────────────────────────────────
 st.markdown("""
